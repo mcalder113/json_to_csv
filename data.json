@@ -1,0 +1,129 @@
+{
+  "views": [
+    {
+      "url": "https://orgdotcom.zendesk.com/api/v2/views/12954328670099.json",
+      "id": 12954328670099,
+      "title": "Support / TU Unassigned",
+      "active": true,
+      "updated_at": "2023-01-11T19:02:56Z",
+      "created_at": "2023-01-11T19:02:54Z",
+      "default": false,
+      "position": 1,
+      "description": null,
+      "execution": {
+        "group_by": null,
+        "group_order": "desc",
+        "sort_by": "created",
+        "sort_order": "asc",
+        "group": null,
+        "sort": {
+          "id": "created",
+          "title": "Requested",
+          "filterable": false,
+          "sortable": true,
+          "order": "asc"
+        },
+        "columns": [
+          {
+            "id": "requester",
+            "title": "Requester",
+            "filterable": true,
+            "sortable": true
+          },
+          {
+            "id": "subject",
+            "title": "Subject",
+            "filterable": false,
+            "sortable": false
+          },
+          {
+            "id": 80976588,
+            "title": "Ticket Channel",
+            "type": "tagger",
+            "url": "https://orgdotcom.zendesk.com/api/v2/ticket_fields/80976588.json",
+            "filterable": true,
+            "sortable": true
+          },
+          {
+            "id": "created",
+            "title": "Requested",
+            "filterable": false,
+            "sortable": true
+          },
+          {
+            "id": "ticket_form",
+            "title": "Ticket form",
+            "filterable": true,
+            "sortable": true
+          }
+        ],
+        "fields": [
+          {
+            "id": "requester",
+            "title": "Requester",
+            "filterable": true,
+            "sortable": true
+          },
+          {
+            "id": "subject",
+            "title": "Subject",
+            "filterable": false,
+            "sortable": false
+          },
+          {
+            "id": "created",
+            "title": "Requested",
+            "filterable": false,
+            "sortable": true
+          },
+          {
+            "id": "ticket_form",
+            "title": "Ticket form",
+            "filterable": true,
+            "sortable": true
+          }
+        ],
+        "custom_fields": [
+          {
+            "id": 80976588,
+            "title": "Ticket Channel",
+            "type": "tagger",
+            "url": "https://orgdotcom.zendesk.com/api/v2/ticket_fields/80976588.json",
+            "filterable": true,
+            "sortable": true
+          }
+        ]
+      },
+      "conditions": {
+        "any": [
+          {
+            "field": "group_id",
+            "operator": "is",
+            "value": "25233908"
+          },
+          {
+            "field": "group_id",
+            "operator": "is",
+            "value": "360010909133"
+          }
+        ],
+        "all": [
+          {
+            "field": "assignee_id",
+            "operator": "is",
+            "value": ""
+          },
+          {
+            "field": "status",
+            "operator": "less_than",
+            "value": "solved"
+          }
+        ]
+      },
+      "restriction": {
+        "type": "Group",
+        "id": 43735548,
+        "ids": [43735548]
+      },
+      "raw_title": "Support / TU Unassigned"
+    }
