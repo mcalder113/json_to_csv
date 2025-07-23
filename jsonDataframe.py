@@ -9,4 +9,4 @@ normalized_data = pd.json_normalize(data['views'])
 
 df = pd.DataFrame(normalized_data)
 
-df
+print(df)
